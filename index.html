@@ -1,8 +1,19 @@
 <script>
 
-var e = ["free day", "5 mile run", "30 minute bike ride", "1000 jump with jump rope", "ab ripper", "some hour long p90x thing", "some other thing idk"];
+var e = ["free day", "5 mile run", "30 minute bike ride", "1000 jumps with jump rope", "ab ripper", "some hour long p90x thing", "some other thing idk", "test1", "test2"];
+var ww = "free day----------";
+var n, l = "";
+for (i = 0; i < 6; i ++){
+  n = e[Math.floor(Math.random()*e.length)];
+  if ( n == l){
+    i--;
+    continue;
+  }
+  l = n;
+  ww += n + "----------";
+}
+//d1 = e[Math.floor(Math.random()*e.length)]
 
-d1 = Math.floor(Math.random()*e.length)
-document.write(d1)
+document.write(ww)
 
 </script>
